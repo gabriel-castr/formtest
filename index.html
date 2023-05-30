@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Formulário</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome de utilizador</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Insira o seu nome de utilizador..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Insira o seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="phone">Telefone</label>
+          <input
+            type="phone"
+            id="phone"
+            placeholder="Insira o seu telefone..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="gender">Sexo</label>
+          <select id="gender">
+            <option selected value="" disabled> Sexo </option>
+            <option value="male"> Masculino </option>
+            <option value="female"> Feminino </option>
+          </select>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Baixar dados</button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
